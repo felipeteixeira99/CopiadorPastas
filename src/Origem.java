@@ -1,6 +1,6 @@
 import java.io.File;
 
-public class OrigemDestino {
+public class Origem {
 	
 	private String origem; //vai entrar um diretorio 
 	private String destino; //destino desse diretorio 

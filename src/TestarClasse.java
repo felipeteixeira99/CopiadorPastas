@@ -3,7 +3,7 @@ public class TestarClasse {
 	
 	public static void main(String[] args) {
 		
-		OrigemDestino backup1 = new OrigemDestino();
+		Origem backup1 = new Origem();
 		
 		backup1.setOrigem("D:\\Users\\Usuario");
 		backup1.setDestino("D:\\Users\\Usuario");
