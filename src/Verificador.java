@@ -9,8 +9,8 @@ public class Verificador {
 	public static void main(String[] args) {
 		
 		Origem dir = new Origem();
-		
-		dir.setOrigem("D:\\Users\\78_tic\\Downloads");
+		dir.setOrigem("D:\\Users\\78_tic\\Documents");
+		dir.setPastasSelecionadas(new String[]{"Gerais", "Pessoais", "Conhecimento"});
 		
 		File verifica = new File(dir.getOrigem());
 		int contador = 0;
@@ -46,6 +46,6 @@ public class Verificador {
             }
 		System.out.println("Arquivos Encontrados: " + contador);
             
-		}		
+		}	
 }
 
