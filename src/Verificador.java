@@ -13,7 +13,7 @@ public class Verificador {
 		dir.setOrigem("D:\\Users\\78_tic\\Downloads");
 		
 		File verifica = new File(dir.getOrigem());
-		
+		int contador = 0;
 		if (verifica.exists() && verifica.isDirectory()) {
 			
 			List<File> arquivosEncontrados = new ArrayList<>();
@@ -26,7 +26,6 @@ public class Verificador {
                 // Verificar se é um arquivo
                 if (arquivo.isFile()) {
                 	arquivosEncontrados.add(arquivo);
-                	int contador = 0;
                 	contador++;
                 }
             }
@@ -41,9 +40,11 @@ public class Verificador {
                     System.out.println("Tamanho do arquivo: " + arquivo.length() + " bytes");
                     System.out.println("----------------------------------");
                	}
-			} else {
+			}
+		else {
             	System.out.println("O diretorio não Existe!");
             }
+		System.out.println("Arquivos Encontrados: " + contador);
             
 		}		
 }
